@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .container{
+    
+            display: grid;
+            grid-template-columns: 100px 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px;
+            padding-top: 20px;
+            padding-left: 40px;
+            gap: 10px;
+            width: 100%;
+            grid-template-areas: 
+            "one one one three"
+            "one two three one"
+            "one three two one" ;
+            
+        }
+        .one{
+            background-color: green;
+            grid-area: one;
+
+        }
+        .two{
+            background-color: orange;
+            grid-area: two;
+        }
+        .three{
+            background-color:red;
+            grid-area: three;
+        }
+                
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="one"> </div>
+        <div class="two"> </div>
+        <div class="three"> </div>
+        <div class="four"> </div>
+        <div class="five"> </div>
+        <div class="six"></div>
+        <div class="seven"></div>
+        <div class="eight"></div>
+        <div class="nine"></div>
+    </div>
+</body>
+</html>
